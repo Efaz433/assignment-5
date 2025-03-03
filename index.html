@@ -39,8 +39,8 @@
          </div>
     </header>
     <!--main section starts here -->
-    <main class="mt-12"> 
-        <div class="max-w-6xl mx-auto  grid grid-cols-4 bg-white  rounded-2xl">
+    <main class="mt-12 max-w-6xl mx-auto  grid grid-cols-4 bg-white  rounded-2xl gap-4"> 
+        
              <!--Beside the activity section-->
            <section class="col-span-3 ">
             <div class="border-b-2 border-dotted p-4 grid grid-cols-4"> 
@@ -66,12 +66,13 @@
                     </h1>
                 </div>
             </div>
+            <!--card section-->
             <div class="grid grid-cols-3 gap-4 p-4">
                 <!--Card 1-->
                 <div class="card bg-base-100   bg-slate-100 shadow-sm p-1">
                     <div class="card-body">
                         <h1 class="bg-white p-1">ShopEase</h1>
-                      <h2 class="card-title text-xl font-bold">Fix Mobile Button  isuue</h2>
+                      <h2 id="card-1-title" class="card-title text-xl font-bold">Fix Mobile Button  isuue</h2>
                       <p class="bg-white p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between">
@@ -87,7 +88,7 @@
                 <div class="card bg-base-100   bg-slate-100 shadow-sm p-1">
                     <div class="card-body">
                         <h1 class="bg-white p-1">CloudSync</h1>
-                      <h2 class="card-title text-xl font-bold">Add Dark Mode</h2>
+                      <h2 id="card-2-title" class="card-title text-xl font-bold">Add Dark Mode</h2>
                       <p class="bg-white p-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                       <div class="flex justify-between">
                         <div>
@@ -102,7 +103,7 @@
                 <div class="card bg-base-100   bg-slate-100 shadow-sm p-1">
                     <div class="card-body">
                         <h1 class="bg-white p-1">SwiftPay</h1>
-                      <h2 class="card-title text-xl font-bold">Optimize  Home page </h2>
+                      <h2 id="card-3-title" class="card-title text-xl font-bold">Optimize  Home page </h2>
                       <p class="bg-white p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between">
@@ -118,7 +119,7 @@
                 <div class="card bg-base-100   bg-slate-100 shadow-sm p-1">
                     <div class="card-body">
                         <h1 class="bg-white p-1">Meta</h1>
-                      <h2 class="card-title text-xl font-bold">Add new emoji 🤲</h2>
+                      <h2 id="card-4-title" class="card-title text-xl font-bold">Add new emoji 🤲</h2>
                       <p class="bg-white p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between">
@@ -134,7 +135,7 @@
                 <div class="card bg-base-100   bg-slate-100 shadow-sm p-1">
                     <div class="card-body">
                         <h1 class="bg-white p-1">Google LLC</h1>
-                      <h2 class="card-title text-xl font-bold">Integrate OpenAI API </h2>
+                      <h2 id="card-5-title" class="card-title text-xl font-bold">Integrate OpenAI API </h2>
                       <p class="bg-white p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between">
@@ -150,7 +151,7 @@
                 <div class="card bg-base-100   bg-slate-100 shadow-sm p-1">
                     <div class="card-body">
                         <h1 class="bg-white p-1">Glassdoar</h1>
-                      <h2 class="card-title text-xl font-bold">Improve Job searching </h2>
+                      <h2 id="card-6-title" class="card-title text-xl font-bold">Improve Job searching </h2>
                       <p class="bg-white p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between">
@@ -165,8 +166,7 @@
             </div>
            </section>
          <!--Activity section-->
-           <section class="">
-                <div class="border-b-2 border-dotted p-2">
+           <section id="history-container" class="border-b-2 border-dotted p-2 space-y-4">
                     <div class="flex justify-center items-center gap-4 p-4">
                         <img src="./assets/activity.png" alt="">
                         <h3>Activity Log</h3>
@@ -174,10 +174,8 @@
                     <div class="flex justify-center items-center">
                         <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#3752FD] p-4 rounded-xl">Clear History</button>
                     </div>
-                    
-                </div>
            </section>
-        </div>
+        
     </main>
     <script src="./javascript file/color-changing-btn.js"></script>
     <script src="./javascript file/new-page-opner.js"></script>
