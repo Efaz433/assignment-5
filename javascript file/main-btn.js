@@ -1,29 +1,3 @@
-// document.getElementById("main-btn-1")   
-//     .addEventListener("click",function(){
-//         alert("Board Updated successfully")
-//         document.getElementById("main-btn-1").disabled = true;
-//         document.getElementById("main-btn-1").style.backgroundColor = "white";
-//         document.getElementById("main-btn-1").style.color = "black";
-        
-        
-//         const taskNum = document.getElementById("task-number").innerText;
-//         const taskLeft = taskNum - 1 ;
-//         document.getElementById("task-number").innerText = taskLeft ;
-
-
-
-//         const willIncrease = document.getElementById("will-increase").innerText;
-//         const convertedIncrease = parseInt(willIncrease);
-//         const increment = convertedIncrease + 1 ;
-//         document.getElementById("will-increase").innerText = increment ;
-
-
-// });
-
-
-
-
-
 
 document.getElementById("main-btn-1")
     .addEventListener("click",function(){
@@ -66,10 +40,13 @@ function alertFunction(id,taskName){
     const increment = convertedIncrease + 1 ;
     document.getElementById("will-increase").innerText = increment ;
 
-    // for history
-    const historyContainer = document.getElementById("history-container");
-    const div = document.createElement("div");
-    div.innerHTML = `
-    <h2 class = "bg-slate-100">you have completed ${taskName} task </h2>`
-    historyContainer.appendChild(div);
+    // to in activity section
+    const h2 = document.createElement("h2");
+    h2.style.backgroundColor = "slategray";
+    h2.style.textAlign = "center";
+    h2.style.padding = "2px"
+    h2.innerText = `you have completed the ${taskName} task`
+    document.getElementById("history").appendChild(h2);
+
+
 }

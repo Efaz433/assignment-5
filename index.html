@@ -39,8 +39,8 @@
          </div>
     </header>
     <!--main section starts here -->
-    <main class="mt-12 max-w-6xl mx-auto  grid grid-cols-4 bg-white  rounded-2xl gap-4"> 
-        
+    <main class="mt-12"> 
+        <div class="max-w-6xl mx-auto  grid grid-cols-4 bg-white  rounded-2xl gap-4">
              <!--Beside the activity section-->
            <section class="col-span-3 ">
             <div class="border-b-2 border-dotted p-4 grid grid-cols-4"> 
@@ -172,13 +172,15 @@
                         <h3>Activity Log</h3>
                     </div>
                     <div class="flex justify-center items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#3752FD] p-4 rounded-xl">Clear History</button>
+                        <button id="history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#3752FD] text-white p-4 rounded-xl">Clear History</button>
                     </div>
+                    <div id="history"></div>
            </section>
-        
+        </div>
     </main>
     <script src="./javascript file/color-changing-btn.js"></script>
     <script src="./javascript file/new-page-opner.js"></script>
     <script src="./javascript file/main-btn.js"></script>
+    <script src="./javascript file/clear-hitory.js"></script>
 </body>
 </html>
