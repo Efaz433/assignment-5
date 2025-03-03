@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Tailwind cdn-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--DaisyUI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Google font cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
 </head>
-<body>
-    
+<body class="poppins-thin bg-slate-200">
+    <!--header section start here --> 
+    <header class="max-w-6xl mx-auto bg-white rounded-2xl">
+        <!-- Nav Bar section -->
+         <div class="flex justify-between items-center p-4">
+            <div class="flex items-center gap-4">
+                <img src="./assets/logo.png" alt="">
+                <h1>Dev<span>Board</span></h1>
+            </div>
+            <div class="flex items-center gap-8">
+                <div class="flex gap-4 items-center px-4 py-2 rounded-2xl bg-slate-200">
+                    <img src="./assets/checkbox.png" alt="">
+                    <h3>23</h3>
+                </div>
+                <img id="color-changing-btn" src="./assets/theme-btn.png" alt="">
+            </div>
+         </div>
+    </header>
+    <script src="./javascript file/color-changing-btn.js"></script>
 </body>
 </html>
