@@ -3,3 +3,4 @@ document.getElementById("history-btn")
         document.getElementById("history").innerHTML = "";
         
     })
+

@@ -43,9 +43,9 @@ function alertFunction(id,taskName){
     // to in activity section
     const h2 = document.createElement("h2");
     h2.style.backgroundColor = "slategray";
-    h2.style.textAlign = "center";
+    // h2.style.textAlign = "center";
     h2.style.padding = "2px"
-    h2.innerText = `you have completed the ${taskName} task`
+    h2.innerText = `you have completed the ${taskName} task on ${new Date().toLocaleString()}`;
     document.getElementById("history").appendChild(h2);
 
 
