@@ -20,10 +20,44 @@
        }
      </style>
 </head>
-<body class="poppins-thin">
-    <header>
-        
+<body class="poppins-thin bg-slate-200 space-y-4">
+    <header class="max-w-6xl mx-auto">
+        <!--nav bar-->
+            <div class="navbar bg-base-100 shadow-sm flex justify-between">
+                <div class="flex items-center gap-4">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="text-2xl ">Dev<span class="text-[#00303C] font-bold">Board</span></h1>
+                </div>
+                <button id="pervious-page" class="btn bg-blue-600 p-4 text-white">Back to desk </button>
+            </div>        
     </header>
-    
+    <main class="space-y-6 max-w-6xl mx-auto bg-white p-4">
+        <div ><h1 class="text-2xl font-bold text-center">Blogs</h1></div>
+        <div class="bg-slate-100 p-8 space-y-4">
+            <h1 class="text-xl">What are the different ways to select element in the DOM</h1>
+            <p>element can be selected by using getelementbyid, getelementbyclass, getelementbytagname, qurrayselector, querryslectorall</p>
+        </div>
+        <div class="bg-slate-100 p-8 space-y-4">
+            <h1 class="text-xl">What are the difference between innertext, innerHTML and textcontent</h1>
+            <p>innertext select the content that displayed in front</p>
+            <p>innerHTML select the code </p>
+            <p>textcontent is same as innertext</p>
+        </div>
+        <div class="bg-slate-100 p-8 space-y-4">
+            <h1 class="text-xl">what is event delegation in the DOM</h1>
+            <p>handeling child element by it's paraent element </p>
+        </div>
+        <div class="bg-slate-100 p-8 space-y-4">
+            <h1 class="text-xl">What is event BUBBLING in the DOM</h1>
+            <p></p>
+        </div>
+        <div class="bg-slate-100 p-8 space-y-4">
+            <h1 class="text-xl">How do you create, add, and remove elements using JavaScript?</h1>
+            <p>element can be created by using .createlement property</p>
+            <p>to add element .append property can be used</p>
+            <p>to delete element .remove property can be used</p>
+        </div>
+    </main>
+    <script src="./javascript file/previous-page.js"></script>
 </body>
 </html>
