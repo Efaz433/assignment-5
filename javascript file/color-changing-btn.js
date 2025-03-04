@@ -7,4 +7,4 @@ document.getElementById('color-changing-btn')
         if(i > colors.length){
             i = 0;
         }
-})
+});
